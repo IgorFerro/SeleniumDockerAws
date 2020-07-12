@@ -17,7 +17,7 @@ public class FlightConfirmationPage {
     @FindBy(xpath= "//font[contains(text(), 'Confirmation')]")
     private WebElement flightConfirmationHeader;
 
-    @FindBy(xpath= "//font[contains(text(), 'USD)]")
+    @FindBy(xpath= "//font[contains(text(), 'USD')]")
     private List<WebElement> prices;
 
     @FindBy(linkText= "SIGN-OFF")
