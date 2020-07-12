@@ -20,7 +20,7 @@ public class FindFlightPage {
 
 
 
-    public void FindFlightPage(WebDriver driver) {
+    public FindFlightPage(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver,30);
         PageFactory.initElements(driver, this);

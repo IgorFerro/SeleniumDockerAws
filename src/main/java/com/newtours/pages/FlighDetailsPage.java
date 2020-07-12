@@ -19,7 +19,7 @@ public class FlighDetailsPage {
     @FindBy(name = "findFlights")
     private WebElement submitBtn;
 
-    public void FlighDetailsPage(WebDriver driver) {
+    public FlighDetailsPage(WebDriver driver) {
         this.driver = driver;
         this.wait =new WebDriverWait(driver,30);
         PageFactory.initElements(driver,this);

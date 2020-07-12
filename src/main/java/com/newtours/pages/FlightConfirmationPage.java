@@ -14,7 +14,7 @@ public class FlightConfirmationPage {
     private WebDriver driver;
     private WebDriverWait wait;
 
-    @FindBy(xpath= "//font[contains(text(), 'Flight Confirmation')]")
+    @FindBy(xpath= "//font[contains(text(), 'Confirmation')]")
     private WebElement flightConfirmationHeader;
 
     @FindBy(xpath= "//font[contains(text(), 'USD)]")
@@ -23,9 +23,9 @@ public class FlightConfirmationPage {
     @FindBy(linkText= "SIGN-OFF")
     private WebElement signOffLink;
 
-    public void FlightConfirmationPage(WebDriver driver) {
+    public FlightConfirmationPage(WebDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver,30);
+        this.wait = new WebDriverWait(driver,90);
         PageFactory.initElements(driver, this);
     }
 
