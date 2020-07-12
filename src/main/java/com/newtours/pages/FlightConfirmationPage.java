@@ -20,6 +20,9 @@ public class FlightConfirmationPage {
     @FindBy(xpath= "//font[contains(text(), 'USD)]")
     private List<WebElement> prices;
 
+    @FindBy(linkText= "SIGN-OFF")
+    private WebElement signOffLink;
+
     public void FlightConfirmationPage(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver,30);
@@ -30,5 +33,6 @@ public class FlightConfirmationPage {
         this.wait.until(ExpectedConditions.visibilityOf(this.flightConfirmationHeader));
         System.out.println(this.flightConfirmationHeader.getText());
         System.out.println(this.prices.get(1).getText());
+        this.signOffLink.click();
     }
 }
