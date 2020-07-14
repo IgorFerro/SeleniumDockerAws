@@ -14,6 +14,7 @@ public class BaseTest {
         System.setProperty
                 ("webdriver.chrome.driver","C:\\SeleniumDockerAws\\src\\main\\resources\\chromedriver.exe");
         this.driver = new ChromeDriver();
+        this.driver.manage().window().maximize();
     }
 
     @AfterTest
