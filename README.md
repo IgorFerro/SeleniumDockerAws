@@ -13,10 +13,10 @@ Selenium WebDriver with Docker, Jenkins &amp; AWS
 
 ## Create Selenium Grid Environment
 
-**First**
-docker pull selenium/hub:3.14
-docker pull selenium/node-firefox:3.14
-docker pull selenium/node-chrome:3.14
+**First**  
+docker pull selenium/hub:3.14  
+docker pull selenium/node-firefox:3.14  
+docker pull selenium/node-chrome:3.14  
 
-**Second** 
-Create docker compose file
+**Second**   
+Create docker compose file  
