@@ -20,3 +20,4 @@ docker pull selenium/node-chrome:3.14
 
 **Second**   
 Create docker compose file  
+docker-compose up or docker-compose up-d
