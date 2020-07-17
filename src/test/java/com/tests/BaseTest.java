@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.ITest;
+import org.testng.ITestContext;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
@@ -15,7 +17,7 @@ public class BaseTest {
     protected WebDriver driver;
 
     @BeforeTest
-    public void setupDriver() throws MalformedURLException {
+    public void setupDriver(ITestContext ctx) throws MalformedURLException {
         //With selenium grid
         // BROWSER => chrome/firefox
         // HUB_HOST => localhost/ 10.0.1.3 / hostname
@@ -31,7 +33,10 @@ public class BaseTest {
             host = System.getProperty("HUB_HOST");
         }
 
+        String testName = ctx.getCurrentXmlTest().getName();
+
         String completeUrl = "http//" + host +":4444/wd/hub";
+        dc.setCapability("name",testName);
         this.driver = new RemoteWebDriver(new URL(completeUrl), dc);
 
         //Without selenium grid
