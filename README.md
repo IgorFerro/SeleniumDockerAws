@@ -21,3 +21,13 @@ docker pull selenium/node-chrome:3.14
 **Second**   
 Create docker compose file  
 docker-compose up or docker-compose up-d
+docker-compose up --scale chrome=3 --scale firefox=3 (scaling)  
+
+**Zalenium**  
+docker pull elgalu/selenium  
+docker pull dosel/zalenium  
+ docker run --rm -ti --name zalenium -p 4444:4444 ^  
+      -v /var/run/docker.sock:/var/run/docker.sock ^  
+      -v /c/Users/your_user_name/temp/videos:/home/seluser/videos ^  
+      --privileged dosel/zalenium start     
+docker stop zalenium  
