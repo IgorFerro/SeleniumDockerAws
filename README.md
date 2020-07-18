@@ -30,4 +30,10 @@ docker pull dosel/zalenium
       -v /var/run/docker.sock:/var/run/docker.sock ^  
       -v /c/Users/your_user_name/temp/videos:/home/seluser/videos ^  
       --privileged dosel/zalenium start     
-docker stop zalenium  
+docker stop zalenium
+
+**Create Jar**  
+mvn clean package -DskipTests  
+
+**Run Test**  
+java -cp selenium-docker.jar;selenium-docker-tests.jar;libs/* org.testng.TestNG ../search-module.xml  
