@@ -37,3 +37,4 @@ mvn clean package -DskipTests
 
 **Run Test**  
 java -cp selenium-docker.jar;selenium-docker-tests.jar;libs/* org.testng.TestNG ../search-module.xml  
+java -cp selenium-docker.jar;selenium-docker-tests.jar;libs/* -DBROWSER=firefox org.testng.TestNG ../search-module.xml  
