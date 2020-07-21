@@ -2,12 +2,12 @@
 <testng-results skipped="2" failed="0" ignored="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="search-module" duration-ms="111" started-at="2020-07-18T09:33:55Z" finished-at="2020-07-18T09:33:55Z">
+  <suite name="search-module" duration-ms="86" started-at="2020-07-20T18:36:05Z" finished-at="2020-07-20T18:36:05Z">
     <groups>
     </groups>
-    <test name="search-test-java" duration-ms="66" started-at="2020-07-18T09:33:55Z" finished-at="2020-07-18T09:33:55Z">
+    <test name="search-test-java" duration-ms="52" started-at="2020-07-20T18:36:05Z" finished-at="2020-07-20T18:36:05Z">
       <class name="com.searchmodule.tests.SearchTests">
-        <test-method status="FAIL" signature="setupDriver(org.testng.ITestContext)[pri:0, instance:com.searchmodule.tests.SearchTests@4ec6a292]" name="setupDriver" is-config="true" duration-ms="51" started-at="2020-07-18T09:33:55Z" finished-at="2020-07-18T09:33:55Z">
+        <test-method status="FAIL" signature="setupDriver(org.testng.ITestContext)[pri:0, instance:com.searchmodule.tests.SearchTests@4ec6a292]" name="setupDriver" is-config="true" duration-ms="38" started-at="2020-07-20T18:36:05Z" finished-at="2020-07-20T18:36:05Z">
           <params>
             <param index="0">
               <value>
@@ -24,7 +24,7 @@
 at java.net.URL.<init>(Unknown Source)
 at java.net.URL.<init>(Unknown Source)
 at java.net.URL.<init>(Unknown Source)
-at com.tests.BaseTest.setupDriver(BaseTest.java:40)
+at com.tests.BaseTest.setupDriver(BaseTest.java:42)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -54,7 +54,7 @@ at org.testng.TestNG.main(TestNG.java:1323)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method status="SKIP" signature="search(java.lang.String)[pri:0, instance:com.searchmodule.tests.SearchTests@4ec6a292]" name="search" duration-ms="0" started-at="2020-07-18T09:33:55Z" finished-at="2020-07-18T09:33:55Z">
+        <test-method status="SKIP" signature="search(java.lang.String)[pri:0, instance:com.searchmodule.tests.SearchTests@4ec6a292]" name="search" duration-ms="0" started-at="2020-07-20T18:36:05Z" finished-at="2020-07-20T18:36:05Z">
           <exception class="java.net.MalformedURLException">
             <message>
               <![CDATA[no protocol: http//localhost:4444/wd/hub]]>
@@ -64,7 +64,7 @@ at org.testng.TestNG.main(TestNG.java:1323)
 at java.net.URL.<init>(Unknown Source)
 at java.net.URL.<init>(Unknown Source)
 at java.net.URL.<init>(Unknown Source)
-at com.tests.BaseTest.setupDriver(BaseTest.java:40)
+at com.tests.BaseTest.setupDriver(BaseTest.java:42)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -94,15 +94,15 @@ at org.testng.TestNG.main(TestNG.java:1323)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search -->
-        <test-method status="SKIP" signature="quitBrowser()[pri:0, instance:com.searchmodule.tests.SearchTests@4ec6a292]" name="quitBrowser" is-config="true" duration-ms="0" started-at="2020-07-18T09:33:55Z" finished-at="2020-07-18T09:33:55Z">
+        <test-method status="SKIP" signature="quitBrowser()[pri:0, instance:com.searchmodule.tests.SearchTests@4ec6a292]" name="quitBrowser" is-config="true" duration-ms="0" started-at="2020-07-20T18:36:05Z" finished-at="2020-07-20T18:36:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
       </class> <!-- com.searchmodule.tests.SearchTests -->
     </test> <!-- search-test-java -->
-    <test name="search-test-qa" duration-ms="3" started-at="2020-07-18T09:33:55Z" finished-at="2020-07-18T09:33:55Z">
+    <test name="search-test-qa" duration-ms="3" started-at="2020-07-20T18:36:05Z" finished-at="2020-07-20T18:36:05Z">
       <class name="com.searchmodule.tests.SearchTests">
-        <test-method status="FAIL" signature="setupDriver(org.testng.ITestContext)[pri:0, instance:com.searchmodule.tests.SearchTests@6bdf28bb]" name="setupDriver" is-config="true" duration-ms="2" started-at="2020-07-18T09:33:55Z" finished-at="2020-07-18T09:33:55Z">
+        <test-method status="FAIL" signature="setupDriver(org.testng.ITestContext)[pri:0, instance:com.searchmodule.tests.SearchTests@6bdf28bb]" name="setupDriver" is-config="true" duration-ms="1" started-at="2020-07-20T18:36:05Z" finished-at="2020-07-20T18:36:05Z">
           <params>
             <param index="0">
               <value>
@@ -119,7 +119,7 @@ at org.testng.TestNG.main(TestNG.java:1323)
 at java.net.URL.<init>(Unknown Source)
 at java.net.URL.<init>(Unknown Source)
 at java.net.URL.<init>(Unknown Source)
-at com.tests.BaseTest.setupDriver(BaseTest.java:40)
+at com.tests.BaseTest.setupDriver(BaseTest.java:42)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -149,11 +149,11 @@ at org.testng.TestNG.main(TestNG.java:1323)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method status="SKIP" signature="quitBrowser()[pri:0, instance:com.searchmodule.tests.SearchTests@6bdf28bb]" name="quitBrowser" is-config="true" duration-ms="0" started-at="2020-07-18T09:33:55Z" finished-at="2020-07-18T09:33:55Z">
+        <test-method status="SKIP" signature="quitBrowser()[pri:0, instance:com.searchmodule.tests.SearchTests@6bdf28bb]" name="quitBrowser" is-config="true" duration-ms="0" started-at="2020-07-20T18:36:05Z" finished-at="2020-07-20T18:36:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-        <test-method status="SKIP" signature="search(java.lang.String)[pri:0, instance:com.searchmodule.tests.SearchTests@6bdf28bb]" name="search" duration-ms="0" started-at="2020-07-18T09:33:55Z" finished-at="2020-07-18T09:33:55Z">
+        <test-method status="SKIP" signature="search(java.lang.String)[pri:0, instance:com.searchmodule.tests.SearchTests@6bdf28bb]" name="search" duration-ms="0" started-at="2020-07-20T18:36:05Z" finished-at="2020-07-20T18:36:05Z">
           <exception class="java.net.MalformedURLException">
             <message>
               <![CDATA[no protocol: http//localhost:4444/wd/hub]]>
@@ -163,7 +163,7 @@ at org.testng.TestNG.main(TestNG.java:1323)
 at java.net.URL.<init>(Unknown Source)
 at java.net.URL.<init>(Unknown Source)
 at java.net.URL.<init>(Unknown Source)
-at com.tests.BaseTest.setupDriver(BaseTest.java:40)
+at com.tests.BaseTest.setupDriver(BaseTest.java:42)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
