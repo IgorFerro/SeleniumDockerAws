@@ -39,8 +39,18 @@ mvn clean package -DskipTests
 java -cp selenium-docker.jar;selenium-docker-tests.jar;libs/* org.testng.TestNG ../search-module.xml  
 java -cp selenium-docker.jar;selenium-docker-tests.jar;libs/* -DBROWSER=firefox org.testng.TestNG ../search-module.xml
 
-**Create Docker File**  
+##Create Docker File##  
 Create the file  
-Build the image : docker build -t=userdocker/selenium-docker .
+Build the image : docker build -t=userdocker/selenium-docker .  
+
+**Acess Container**   
+docker run -it --entrypoint=/bin/sh 217306aaaa/selenium-docker
+
+**Run Test**
+java -cp selenium-docker.jar:selenium-docker-tests.jar:libs/* -DHUB_HOST=192.168.0.139 org.test.TestNG search-module.xml
+
+
+
+
 
 
