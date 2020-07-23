@@ -58,6 +58,9 @@ curl -s http://localhost:4444/wd/hub/status
 **Install curl and JQ**  
  apk add curl jq  
  
+ **Build Image**  
+ docker build -t="userDocker/selenium-docker" .  
+ 
  
 
 
