@@ -61,6 +61,12 @@ curl -s http://localhost:4444/wd/hub/status
  **Build Image**  
  docker build -t="userDocker/selenium-docker" .  
  
+ ##Jenkins 
+ 
+ **Jenkins Using Docker**
+ docker run -p 80:8080 -p 50000:50000 -v "/($pwd)/jenkins:/var/jenkins_home" jenkins/jenkins:lts  
+ or  docker run -p 8080:8080 -p 50001:50001 jenkins  
+ 
  
 
 
